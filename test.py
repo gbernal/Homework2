@@ -9,6 +9,10 @@ from electorialDisaster import MediaFrenzy
 mc = mediacloud.api.MediaCloud('0a65d2b3a0780cf15a40ca6914fe2dfeed17257e30b440c0ddffdfbc179635cd')
 wordsC = mc.wordCount('( clinton )',  solr_filter=[mc.publish_date_query( datetime.date( 2016, 7, 1), datetime.date( 2016, 8, 1) ), 'tags_id_media:1' ] )
 
+# This metthod will test basic function of a function or class that imports mediacloud API
+
+#It will check connection, name of politician and number of mentions
+
 class Election_Fuckup(unittest.TestCase):
     
     def setUp(self):
